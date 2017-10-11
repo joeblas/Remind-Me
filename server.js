@@ -3,7 +3,7 @@
     var passport   = require('passport')
     var session    = require('express-session')
     var bodyParser = require('body-parser')
-    var env        = require('dotenv').load()
+    var env        = require('dotenv').load({path: ".env"})
 	var exphbs     = require('express-handlebars')
 	
 
@@ -45,7 +45,8 @@
 
 
     //Routes
-    var authRoute = require('./app/routes/auth.js')(app,passport);
+	var authRoute = require('./app/routes/auth.js')(app,passport);
+	require('./app/routes/reminders.js')(app);
 
 
     //load passport strategies

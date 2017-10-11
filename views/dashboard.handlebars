@@ -14,18 +14,18 @@
 					<h3 class="panel-title">Add Reminder</h3>
 				</div>
 				<div class="panel-body">
-					<form role="form">
+					{{!-- <form role="form"> --}}
 						<div class="form-group">
 							<label for="comment-input">Enter Your Reminder</label>
-							<textarea class="form-control" id="reminder-input" rows="5"></textarea>
+							<textarea class="form-control" id="reminder-input" rows="5" placeholder="correct form"></textarea>
 						</div>
 						<div class="form-group">
-							<label class="control-label" for="date">Pick A Date</label>
-							<input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text" />
+							<label class="control-label" for="phonenumber">Phone Number</label>
+							<input class="form-control" id="phonenumber" name="phonenumber" placeholder="(XXX)XXX-XXXX" type="text" />
 						</div>
 
 						<button class="btn btn-default" id="add-reminder" type="submit">Remind Me</button>
-					</form>
+					{{!-- </form> --}}
 				</div>
 			</div>
 		</div>
