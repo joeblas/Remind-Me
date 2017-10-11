@@ -13,7 +13,9 @@ app.post('/signup', passport.authenticate('local-signup',  { successRedirect: '/
                                                     ));
 
 
-app.get('/dashboard',isLoggedIn, authController.dashboard);
+app.get('/dashboard',isLoggedIn, authController.dashboard, function(req , res){
+	console.log(req.user.firstname);
+});
 
 
 app.get('/logout',authController.logout);

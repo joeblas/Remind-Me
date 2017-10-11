@@ -1,0 +1,58 @@
+<div class="container">
+
+	<br>
+
+	<!-- Jumbotron -->
+	<div class="jumbotron">
+		<h1 class="text-center">Hello, {{firstname}}</h1>
+	</div>
+	<!-- Create Reminder Panel-->
+	<div class="row">
+		<div class="col-lg-6">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Add Reminder</h3>
+				</div>
+				<div class="panel-body">
+					<form role="form">
+						<div class="form-group">
+							<label for="comment-input">Enter Your Reminder</label>
+							<textarea class="form-control" id="reminder-input" rows="5"></textarea>
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="date">Pick A Date</label>
+							<input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text" />
+						</div>
+
+						<button class="btn btn-default" id="add-reminder" type="submit">Remind Me</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- Recent Reminders -->
+		<div class="col-lg-6">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Recent Activity</h3>
+				</div>
+
+				<div class="panel-body">
+					<form role="form">
+
+						<div class="form-group">
+							<label for="comment-input">Reminders To Be Sent</label>
+							<textarea class="form-control" id="reminder-input" rows="5"></textarea>
+						</div>
+
+						<div class="form-group">
+							<label for="comment-input">Delivered Reminders</label>
+							<textarea class="form-control" id="reminder-input" rows="5"></textarea>
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

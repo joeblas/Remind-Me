@@ -1,0 +1,68 @@
+/*body {
+    background: url(https://images.unsplash.com/photo-1506485338023-6ce5f36692df?dpr=1&auto=compress,format&fit=crop&w=2550&h=&q=80&cs=tinysrgb&crop=);
+    background-size: cover;
+    background-position: center; 
+}*/
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 5em;
+}
+
+
+.content{
+	/* padding-top: 20%; */
+	text-align: center;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+hr {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.footer {
+  position: relative;
+  text-align: center;
+  padding: 15px;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #f5f5f5;
+}
+.display1{
+    background: url(https://images.unsplash.com/photo-1506485338023-6ce5f36692df?dpr=1&auto=compress,format&fit=crop&w=2550&h=&q=80&cs=tinysrgb&crop=);
+    background-size: cover;
+    background-position: center; 
+    height: 100%;
+    
+}
+.display2{
+    background: url(https://images.unsplash.com/1/iphone-4-closeup.jpg?dpr=1&auto=compress,format&fit=crop&w=1050&h=&q=80&cs=tinysrgb&crop=);
+    background-size: cover;
+    background-position: center; 
+    height: 100%;
+}
+.display3{
+    background: url(https://images.unsplash.com/photo-1493236115844-5d037913e801?dpr=1&auto=compress,format&fit=crop&w=2550&h=&q=80&cs=tinysrgb&crop=);
+    background-size: cover;
+    background-position: center; 
+    height: 100%;
+}
+
+#phonenum {
+	color: black;
+}
+
+/* body {
+    padding-top: 51px;
+} */
