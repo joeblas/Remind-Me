@@ -14,7 +14,7 @@ app.post("/create-todo", function(req, res){
 		
 		body: reminder,
 		to: phoneNumber,  // Text this number
-		from: "7042289217" // From a valid Twilio number
+		from: null // From a valid Twilio number
 	})
 	.then((message) => console.log(message.sid)).catch(function(err){ console.log(err)})
 })
