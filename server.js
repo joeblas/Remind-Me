@@ -3,7 +3,7 @@
     var passport   = require('passport')
     var session    = require('express-session')
     var bodyParser = require('body-parser')
-    var env        = require('dotenv').load({path: ".env"})
+    var env        = require('dotenv').config();
 	var exphbs     = require('express-handlebars')
 	
 
