@@ -8,27 +8,27 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lyndachiwetelu/using-passport-with-sequelize-and-mysql.git"
+    "url": "https://github.com/joeblas/remind-me2.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lyndachiwetelu/node-passport-with-sequelize-and-mysql-example/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/lyndachiwetelu/node-passport-with-sequelize-and-mysql-example#readme",
+  "homepage": "",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
-    "body-parser": "^1.16.0",
+    "body-parser": "^1.18.2",
     "cron": "^1.3.0",
     "dotenv": "^4.0.0",
-    "express": "^4.14.0",
+    "express": "^4.16.2",
     "express-handlebars": "^3.0.0",
-    "express-session": "^1.15.0",
+    "express-session": "^1.15.6",
     "moment": "^2.19.0",
-    "mysql": "^2.13.0",
+    "mysql": "^2.15.0",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
-    "sequelize": "^3.30.1",
+    "sequelize": "^3.30.4",
     "twilio": "^3.8.0"
   }
 }
