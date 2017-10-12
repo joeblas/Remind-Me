@@ -5,10 +5,19 @@
 }*/
 
 body,
-html {
-    width: 100%;
+/* html { */
+    /* width: 100%;
     height: 100%;
-    color: white;
+	color: black */
+	html { 
+		background: url(../images/gilles-lambert-8649.jpg) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+
+		color: white;
+	  }
 }
 
 h1 {
@@ -66,3 +75,11 @@ hr {
 /* body {
     padding-top: 51px;
 } */
+
+.display-3 {
+	color: black;
+}
+
+.jumbotron {
+	background: transparent;
+}

@@ -27,7 +27,7 @@
 				<div class="col-lg-6">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h3 class="panel-title">Add Reminder</h3>
+							<h3 class="panel-title">Sign In</h3>
 						</div>
 						<div class="panel-body">
 							<form id="signin" name="signin" method="post" action="signin">
@@ -45,7 +45,26 @@
 						</div>
 					</div>
 				</div>
+			
+			<div class="col-lg-6">
+				<form class="form-signin" id="signup" name="signup" method="post" action="/signup">
+					<h2 class="form-signin-heading">Sign Up!</h2>
+					<label for="email" class="sr-only">Email Address</label>
+					<input type="email" class="form-control" placeholder="Email address" id="inputEmail" name="email" type="email" required autofocus
+					/>
+					<label for="firstname" class="sr-only">First Name</label>
+					<input name="firstname" type="text" class="form-control" placeholder="First Name" required />
+					<label for="lastname" class="sr-only">Last Name</label>
+					<input name="lastname" type="text" class="form-control" placeholder="Last Name" required />
+					<label for="username" class="sr-only">Phone Number</label>
+					<input name="username" type="text" class="form-control" placeholder="Phone Number (XXXXXXXXXX)" required />
+					<label for="inputPassword" class="sr-only">Password</label>
+					<input name="password" type="password" class="form-control" placeholder="Password" required />
+					<input class="btn btn-lg btn-primary btn-block" type="submit" value="Sign Up" />
+				</form>
 			</div>
+		</div>
+	</div>
 
 			{{!-- <form id="signin" name="signin" method="post" action="signin">
 				<label for="email">Email Address</label>

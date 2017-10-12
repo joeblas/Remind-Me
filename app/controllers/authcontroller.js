@@ -9,11 +9,11 @@ exports.signin = function(req, res) {
 };
 
 exports.dashboard = function(req, res) {
-  res.render("dashboard", { layout: "app", firstname: req.user.firstname });
+  res.render("dashboard", { layout: "app", firstname: req.user.firstname, username: req.user.username });
 };
 
 exports.logout = function(req, res) {
   req.session.destroy(function(err) {
-    res.redirect("/");
+    res.redirect("/signin");
   });
 };

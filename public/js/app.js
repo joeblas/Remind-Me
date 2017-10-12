@@ -1,3 +1,9 @@
+let phone = $("#phonenumber");
+
+phone.prop('defaultValue');
+phone.css("display", "none");
+
+
 $("#add-reminder").on("click", function(){
 	let phoneNumber = $("#phonenumber").val()
 	let reminder = $("#reminder-input").val()
@@ -12,5 +18,11 @@ $("#add-reminder").on("click", function(){
 		}
 	}).then(function(res){
 		console.log(res);
+
+
+	})
+
+	$(".form-group").each(function(){
+		this.empty();
 	})
 })
