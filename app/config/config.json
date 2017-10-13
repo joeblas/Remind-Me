@@ -15,10 +15,7 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "s4o5uj66cbpzqmwo",
-    "password": "ofwaz9j2f54xlt4s",
-	"database": "sequelize_passport",
-    "host": "mysql://s4o5uj66cbpzqmwo:l6slz5o3eduzatkw.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-    "dialect": "mysql"
+   "use_env_variable": "JAWSDB_URL",
+   "dialect": "mysql"
   }
 }
