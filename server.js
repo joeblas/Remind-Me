@@ -5,9 +5,16 @@
     var bodyParser = require('body-parser')
     var env        = require('dotenv').config();
 	var exphbs     = require('express-handlebars')
+	var mysql	   = require('mysql2');
+	
 
 	var port = process.env.PORT || 3000;
-	
+
+	if(process.env.JAWSDB_URL) {
+		connection = mysql.createConnection(process.env.JAWSDB_URL)
+
+		connection.connect();
+	}
 
 
 
