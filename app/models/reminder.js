@@ -1,14 +1,16 @@
 module.exports = function(sequelize, Sequelize) {
 	
-		var Reminder = sequelize.define('reminder', {
-			name: Sequelize.STRING,
-			phoneNumber: Sequelize.STRING,
-			notification: Sequelize.INTEGER,
-			timeZone: Sequelize.STRING,
-			time: Sequelize.DATE, 
+		var Reminder = sequelize.define('Reminder', {
+			name: Sequelize.STRING
 			
 	});
-	
+		Reminder.associate = function(models){
+			Reminder.belongsTo(models.User, {
+				foreignKey: {
+					allowNull: false
+				}
+			})
+		}
 		return Reminder;
 	
 	}

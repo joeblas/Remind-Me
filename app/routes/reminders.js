@@ -3,6 +3,7 @@ var authToken = process.env.TWILIO_AUTH_TOKEN;   // Your Auth Token from www.twi
 
 // var twilio = require('twilio');
 var client = require('twilio')(accountSid, authToken);
+var db = require('../models');
 
 module.exports = function(app){
 
@@ -10,6 +11,7 @@ app.post("/create-todo", function(req, res){
 	console.log(req.body)
 	let phoneNumber = req.body.phoneNumber;
 	let reminder = req.body.reminder;
+	
 	client.messages.create({
 		
 		body: reminder,
@@ -17,6 +19,16 @@ app.post("/create-todo", function(req, res){
 		from: process.env.TWILIO_PHONE_NUMBER // From a valid Twilio number
 	})
 	.then((message) => console.log(message.sid)).catch(function(err){ console.log(err)})
+
+	let newReminder = db.Reminder.create({
+		
+		name: req.body.reminder,
+		phoneNumber: req.body.username,
+		UserId: req.body.id
+
+	})
+
+	
 })
 
 }
