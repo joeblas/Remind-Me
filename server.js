@@ -5,6 +5,8 @@
     var bodyParser = require('body-parser')
     var env        = require('dotenv').config();
 	var exphbs     = require('express-handlebars')
+
+	var port = process.env.PORT || 3000;
 	
 
 
@@ -63,7 +65,7 @@
 
 
 
-	app.listen(5000, function(err){
+	app.listen(port, function(err){
 		if(!err)
 		console.log("Site is live"); else console.log(err)
 
