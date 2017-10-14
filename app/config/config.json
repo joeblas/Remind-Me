@@ -13,12 +13,5 @@
     "database": "",
     "host": "",
     "dialect": "mysql"
-  },
-  "production": {
-   "username": "s4o5uj66cbpzqmwo",
-   "password": "ofwaz9j2f54xlt4s",
-   "database": "cdbixa9nkyskbopu",
-   "host": "l6slz5o3eduzatkw.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-   "dialect": "mysql"
   }
 }
