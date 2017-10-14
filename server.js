@@ -10,11 +10,11 @@
 
 	var port = process.env.PORT || 3000;
 
-	if(process.env.JAWSDB_URL) {
-		connection = mysql.createConnection(process.env.JAWSDB_URL)
+	// if(process.env.JAWSDB_URL) {
+	// 	connection = mysql.createConnection(process.env.JAWSDB_URL)
 
-		connection.connect();
-	}
+	// 	connection.connect();
+	// }
 
 
 
